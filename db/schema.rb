@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170322150325) do
+ActiveRecord::Schema.define(version: 20170322161712) do
 
   create_table "inventories", force: :cascade do |t|
     t.string   "brand"
@@ -22,8 +22,10 @@ ActiveRecord::Schema.define(version: 20170322150325) do
     t.text     "description"
     t.string   "title"
     t.string   "category"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.boolean  "public"
+    t.boolean  "PublicVisible"
   end
 
 end

@@ -9,7 +9,6 @@ class CreateInventories < ActiveRecord::Migration
       t.text :description
       t.string :title
       t.string :category
-
       t.timestamps null: false
     end
   end

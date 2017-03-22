@@ -4,7 +4,8 @@ class SalesController < ApplicationController
     render text: "sales"
   end
   
+  def index
+    @inventories = Inventory.all
+  end
 
-  
-  
 end

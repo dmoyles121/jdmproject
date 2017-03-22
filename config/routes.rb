@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   #controller for profile
   get '/profile', :controller=>'profile', :action=>'profileView'
   
-  get '/sales', :controller=>'sales', :action=>'SalesPage'
+  get '/sales', :controller=>'sales', :action=>'index'
   
 
   # Example of regular route:
