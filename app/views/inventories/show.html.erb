@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @inventory.brand %>
+</p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @inventory.colour %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @inventory.cost %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @inventory.quantity %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @inventory.image_url %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @inventory.description %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @inventory.title %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @inventory.category %>
+</p>
+
+<%= link_to 'Edit', edit_inventory_path(@inventory) %> |
+<%= link_to 'Back', inventories_path %>
